@@ -5,12 +5,7 @@ bible_reading_plan =  {
         "Genesis 3",
         "Genesis 4"
     ],
-    "2": [
-        "Genesis 5",
-        "Genesis 6",
-        "Genesis 7",
-        "Genesis 8"
-    ],
+   
     "3": [
         "Genesis 9",
         "Genesis 10",
