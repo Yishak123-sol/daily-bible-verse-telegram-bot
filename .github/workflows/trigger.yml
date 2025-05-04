@@ -1,0 +1,12 @@
+name: Daily Trigger Bible API
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make POST request
+        run: |
+          curl -X POST https://daily-bible-verse-telegram-bot-1.onrender.com
