@@ -8,9 +8,11 @@ from bible_plan import bible_reading_plan
 from datetime import datetime, timedelta
 
 
-# Configure your Telegram bot and channel
-TELEGRAM_BOT_TOKEN = '8058465563:AAGfHNoGShd75nq59wD-n0wayLhFD3gMHY8'  # Use your bot token
-TELEGRAM_CHANNEL_ID = '@daily_bible_reader'  # Your channel username
+import os
+from telegram import Bot
+
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID")
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 
 # Define the starting date (today is Day 1)
